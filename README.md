@@ -38,25 +38,25 @@ library(EWMApchart)
 #1 is the maximum error what we can allow between hat_ARL0 and ARL0
 EWMA_p_two(0.2,0.05,5,1,1,200,10000,1)
 #> $L1
-#> [1] 2.315902
+#> [1] 2.320547
 #> 
 #> $L2
-#> [1] 2.220261
+#> [1] 2.214295
 #> 
 #> $hat_ARL0
-#> [1] 200.5301
+#> [1] 199.6159
 #> 
 #> $hat_MRL
-#> [1] 135
+#> [1] 131
 #> 
 #> $hat_SDRL
-#> [1] 210.103
+#> [1] 215.1574
 #> 
 #> $UCL
-#> [1] 0.2663381
+#> [1] 0.2664711
 #> 
 #> $LCL
-#> [1] 0.1364015
+#> [1] 0.1365724
 ```
 
 This is an example which shows how plot the two sided adjusted EWMA-p

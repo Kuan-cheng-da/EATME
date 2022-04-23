@@ -31,7 +31,8 @@ EWMA_p_chart_one_LCL = function(ICdata,OCdata,lambda,n,pi1 = 1,pi2 = pi1,ARL0 = 
   ICdata1 = ICdata/n
   p = mean(ICdata1)
   a = EWMA_p_one_LCL(p,lambda,n,pi1,pi2,ARL0,M,error)
-  E = ewma(ICdata1,lambda,p)
+  ICdata1 = (ICdata1+pi2-1)/(pi1+pi2-1)
+  E = ewma(ICdata1,lambda,mean(ICdata1))
   color = rep('black',length(ICdata1))
   color[(E-a$LCL)<0] = 'red'
   plot(E,type = 'b',col = color,pch = 16,xlab = 't',ylab = 'EWMA',
@@ -41,7 +42,8 @@ EWMA_p_chart_one_LCL = function(ICdata,OCdata,lambda,n,pi1 = 1,pi2 = pi1,ARL0 = 
   text(x = (length(ICdata1)-3), y = a$LCL+0.007, paste('LCL=', txt))
 
   OCdata1 = OCdata/n
-  E = ewma(OCdata1,lambda,p)
+  OCdata1 = (OCdata1+pi2-1)/(pi1+pi2-1)
+  E = ewma(OCdata1,lambda,mean(ICdata1))
   color = rep('black',length(OCdata1))
   color[(E-a$LCL)<0] = 'red'
   plot(E,type = 'b',col = color,pch = 16,xlab = 't',ylab = 'EWMA',
