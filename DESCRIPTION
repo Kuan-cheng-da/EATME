@@ -1,0 +1,16 @@
+Package: EWMApchart
+Type: Package
+Title: EWMA-p chart
+Version: 0.1.0
+Author: Cheng-Kuan Lin, Li-Pang Chen, Su-Fen Yang 
+Maintainer: Cheng-Kuan Lin <zore2023852@gmail.com>
+Description: This package can simulate the discrete data with measurement error, convert continuous data to discrete data by sign statistic, compute the control limit of EWMA-p chart and adjusted EWMA-p chart for two one-sided chart or two-sided chart, and plot the EWMA-p chart and adjusted EWMA-p chart for input data.
+License: GPL-3
+Encoding: UTF-8
+Imports: qcr, stats, graphics
+LazyData: true
+RoxygenNote: 7.1.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
