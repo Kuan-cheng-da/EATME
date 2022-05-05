@@ -1,0 +1,16 @@
+Package: EATME
+Type: Package
+Title: EWMA-p control charts with correction of measurement error
+Version: 0.1.0
+Author: Cheng-Kuan Lin, Li-Pang Chen, Su-Fen Yang 
+Maintainer: Cheng-Kuan Lin <zore2023852@gmail.com>
+Description: The package EATME, refered to EWMA with Adjustments To Measuremeant Error, aims to address measurement error effects when constructing EWMA-p control charts. The method primarily focuses on binary random variables, but it can be applied to any continuous random variables by using sign statistic to transform them to discrete ones. With the correction of measurement error effects, we can obtain the corrected control limits of EWMA-p control chart and reasonably adjusted EWMA-p control charts.
+License: GPL-3
+Encoding: UTF-8
+Imports: qcr, stats, graphics
+LazyData: true
+RoxygenNote: 7.1.2
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
