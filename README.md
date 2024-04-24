@@ -14,7 +14,7 @@ variables, but it can be applied to any continuous random variables by
 using sign statistic to transform them to discrete ones. With the
 correction of measurement error effects, we can obtain the corrected
 control limits of EWMA-p control chart and reasonably adjusted EWMA-p
-control charts.
+control charts. The attachment "Real data example" is a sensitivity analysis conducted on the real data "IC_SECOM" and "OC_SECOM." Compared to other examples, it features a richer color scheme to facilitate reading and comparison.
 
 ## Installation
 
