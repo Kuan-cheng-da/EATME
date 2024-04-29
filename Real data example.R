@@ -141,9 +141,9 @@ plot(E,type = 'b',col = color,pch = 16,xlab = 't',ylab = 'EWMA',
 abline(h = CL2$UCL,lty = 1,col = 'blue')
 abline(h = CL2$LCL,lty = 1,col = 'blue')
 txt1 = as.character(round(CL2$UCL,3))
-text(x = (length(ICdata1)-5), y = CL2$UCL+0.007, paste('UCL=', txt1),col="blue")
+text(x = (length(OCdata1)-2), y = CL2$UCL+0.007, paste('UCL=', txt1),col="blue")
 txt2 = as.character(round(CL2$LCL,3))
-text(x = (length(ICdata1)-5), y = CL2$LCL+0.007, paste('LCL=', txt2),col="blue")
+text(x = (length(OCdata1)-2), y = CL2$LCL+0.007, paste('LCL=', txt2),col="blue")
 par(new = T)
 pi1 = 0.616
 pi2 = 0.821
@@ -155,9 +155,9 @@ color[E>CL3$UCL] = 'red'
 color[E<CL3$LCL] = 'red'
 plot(E,type = 'b',col = color,pch = 16,xlab = 't',ylab = 'EWMA',
      ylim = c(0.16,0.5),main = 'Adjusted EWMA variance chart for OC data')
-abline(h = CL3$UCL,lty = 1,col = 'blue')
-abline(h = CL3$LCL,lty = 1,col = 'blue')
+abline(h = CL3$UCL,lty = 1,col = 'orange')
+abline(h = CL3$LCL,lty = 1,col = 'orange')
 txt1 = as.character(round(CL3$UCL,3))
-text(x = (length(ICdata1)-5), y = CL3$UCL+0.007, paste('UCL=', txt1),col="blue")
+text(x = (length(OCdata1)-3), y = CL3$UCL+0.007, paste('UCL=', txt1),col="orange")
 txt2 = as.character(round(CL3$LCL,3))
-text(x = (length(ICdata1)-5), y = CL3$LCL+0.007, paste('LCL=', txt2),col="blue")
+text(x = (length(OCdata1)-3), y = CL3$LCL+0.007, paste('LCL=', txt2),col="orange")
